@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" Exercice 1 : Réaliser cette page">
+    <meta name="robots" content="index">
+    <title>Mon CV</title>
+    <link rel="stylesheet" href="./assets/css/Style-CV.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Positionnement de la photo de profil ainsi que sa taille -->
+        <div class="image-position">
+            <img class="photo-profil" src="./telecharger/icone-PNG/Photo-de-profil.jpg"
+                alt="Photo de Profil de Lory MARIE">
+        </div>
+
+        <!-- Présentation du CV -->
+        <h1>Lory MARIE</h1>
+
+        <h2 class="h2-header">
+            Développeur Web et Web mobile
+        </h2>
+        <div>
+            <!-- Positionnement des différentes fausses informations pour éviter de mettre de vrai informations pouvant mettre en danger la sécurité de quelqu'un si entre de mauvaises main  -->
+            <!-- Si les icones s'affichent en tout petit il faut actualiser la page web pour qu'elle retrouve leur taille normale, personnellement je ne sais pas pourquoi il y a ce bug -->
+            <img class="mail-position"
+                srcset="./telecharger/icone-PNG/email.png 480w, ./telecharger/icone-PNG/email.png 800w" sizes=" 20px,
+            30px" src="./telecharger/icone-PNG/email.png" alt="icone email" />
+            <p class="mail-position">Jesuis.Anonyme@gmail.com</p>
+
+            <img class="Domicile-position"
+                srcset="./telecharger/icone-PNG/accueil.png 480w, ./telecharger/icone-PNG/accueil.png 800w" sizes=" 20px,
+            30px" src="./telecharger/icone-PNG/accueil.png" alt="icone Domicile" />
+            <p class="Domicile-position"><a
+                    href="https://www.google.com/maps/search/?api=1&query=-41.28945790313833, -13.309003814998276"
+                    target="_blank">64-Rue de l'Anonymat</a></p>
+        </div>
+        <div class="div-espacement-bas">
+            <img class="Téléphone-position"
+                srcset="./telecharger/icone-PNG/appel.png 480w, ./telecharger/icone-PNG/appel.png 800w" sizes=" 20px,
+            30px" src="./telecharger/icone-PNG/icone-PNG/appel.png" alt="icone Domicile" />
+            <p class="Téléphone-position">+350 0577 75 48 96</p>
+
+            <img class="Permis-position"
+                srcset="./telecharger/icone-PNG/voiture-avant.png 480w, ./telecharger/icone-PNG/voiture-avant.png 800w"
+                sizes=" 20px,
+            30px" src="./telecharger/icone-PNG/icone-PNG/voiture-avant.png" alt="icone Domicile" />
+            <p class="Permis-position">Pas de permis</p>
+        </div>
+
+    </header>
+    <main class="content-main">
+        <!-- Application du Flexbox pour aligner horizontalement le contenu nav avec celui de article-->
+        <section id="flex-row">
+            <nav class="content-nav">
+                <!-- Liste des compétences ainsi que la notation prédéfini en étoiles en utilisant des images d'étoile pleine et vide -->
+                <h2>Compétences</h2>
+                <hr class="hr-nav-taille">
+                <div id="div-flex-nav">
+                    <p><strong>HTML</strong></p>
+                    <p class="star-rating-HTML">
+                        <input type="radio" id="html-star5" name="rating-html" value="5" />
+                        <label for="html-star5" title="5 étoiles"> <img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile.png 480w, ./telecharger/icone-PNG/etoile.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile.png"
+                                alt="icone Domicile" /></label>
+                        <input type="radio" id="html-star4" name="rating-html" value="4" checked />
+                        <label for="html-star4" title="4 étoiles"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile-remplie.png 480w, ./telecharger/icone-PNG/etoile-remplie.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile-remplie.png"
+                                alt="icone Domicile" /></label>
+                        <input type="radio" id="html-star3" name="rating-html" value="3" />
+                        <label for="html-star3" title="3 étoiles"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile-remplie.png 480w, ./telecharger/icone-PNG/etoile-remplie.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile-remplie.png"
+                                alt="icone Domicile" /></label>
+                        <input type="radio" id="html-star2" name="rating-html" value="2" />
+                        <label for="html-star2" title="2 étoiles"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile-remplie.png 480w, ./telecharger/icone-PNG/etoile-remplie.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile-remplie.png"
+                                alt="icone Domicile" /></label>
+                        <input type="radio" id="html-star1" name="rating-html" value="1" />
+                        <label for="html-star1" title="1 étoile"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile-remplie.png 480w, ./telecharger/icone-PNG/etoile-remplie.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile-remplie.png"
+                                alt="icone Domicile" /></label>
+                    </p>
+                </div>
+                <div id="div-flex-nav">
+                    <p class="p-espacement-verticale"><strong>CSS</strong></p>
+                    <p class="star-rating-CSS">
+                        <input type="radio" id="css-star5" name="rating-css" value="5" />
+                        <label for="css-star5" title="5 étoiles"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile.png 480w, ./telecharger/icone-PNG/etoile.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile.png"
+                                alt="icone Domicile" /></label>
+                        <input type="radio" id="css-star4" name="rating-css" value="4" />
+                        <label for="css-star4" title="4 étoiles"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile.png 480w, ./telecharger/icone-PNG/etoile.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile.png"
+                                alt="icone Domicile" /></label>
+                        <input type="radio" id="css-star3" name="rating-css" value="3" checked />
+                        <label for="css-star3" title="3 étoiles"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile-remplie.png 480w, ./telecharger/icone-PNG/etoile-remplie.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile-remplie.png"
+                                alt="icone Domicile" /></label>
+                        <input type="radio" id="css-star2" name="rating-css" value="2" />
+                        <label for="css-star2" title="2 étoiles"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile-remplie.png 480w, ./telecharger/icone-PNG/etoile-remplie.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile-remplie.png"
+                                alt="icone Domicile" /></label>
+                        <input type="radio" id="css-star1" name="rating-css" value="1" />
+                        <label for="css-star1" title="1 étoile"><img class="star-espacement"
+                                srcset="./telecharger/icone-PNG/etoile-remplie.png 480w, ./telecharger/icone-PNG/etoile-remplie.png 800w"
+                                sizes=" 20px, 30px" src="./telecharger/icone-PNG/etoile-remplie.png"
+                                alt="icone Domicile" /></label>
+                    </p>
+                </div>
+
+                <!-- Liste des langues apprises ainsi que mon niveau actuel -->
+                <h2>Langues</h2>
+                <hr class="hr-nav-taille">
+                <div id="div-flex-nav">
+                    <p><strong>Français</strong></p>
+                    <p id="p-Langue-Français" dir="rtl">Langue maternelle</p>
+                </div>
+                <div id="div-flex-nav">
+                    <p class="p-espacement-verticale-Langue"><strong>Anglais</strong></p>
+                    <p class="p-espacement-verticale-Langue" id="p-Langue-Anglais" dir="rtl">Moyen</p>
+                </div>
+                <div id="div-flex-nav">
+                    <p class="p-espacement-verticale-Langue"><strong>Espagnol</strong></p>
+                    <p class="p-espacement-verticale-Langue" id="p-Langue-Espagnol" dir="rtl">Passable</p>
+                </div>
+
+                <!-- Liste des Qualité et Centre d'intéret listés avec le symbol carré car utiliser la balise ul et li applique un espacement qui sépare la liste de la marge et donc ne correspond pas a l'emplacement visuel sur le modèle du devoir -->
+                <h2>Qualités</h2>
+                <hr class="hr-nav-taille">
+                <p><span class="symbole">■</span>Esprit d'équipe <br />
+                    <span class="symbole">■</span>Autonome <br />
+                    <span class="symbole">■</span>Organisé <br />
+                    <span class="symbole">■</span>Travail Rigoureux
+                </p>
+
+
+                <h2>Centre d'intéret</h2>
+                <hr class="hr-nav-taille">
+                <p><span class="symbole">■</span>Jeux vidéos <br />
+                    <span class="symbole">■</span>Les chats <br />
+                    <span class="symbole">■</span>Résaux sociaux
+                </p>
+
+            </nav>
+
+            <!-- Contenu de la partie droite de la page web qui est représenté par la balise article -->
+            <article id="flex-column">
+                <!-- Utilisation de Flex--column pour que les éléments soient alignés et listé verticalement -->
+
+                <aside>
+                    <h2 class="h2-Profil">Profil</h2>
+                    <!-- Contenu du profil avec mes compétences -->
+                    <hr>
+                    <p class="p-indentation ">
+                        Je m'appel Lory MARIE j'ai eu un BAC Général au lycée Yves Leborgne a Sainte-Anne situé en
+                        Guadeloupe.
+                        J'ai commencé une formation de développeur web avec le centre européen de formation et j'ai un
+                        bon niveau en HTML et CSS.
+                    </p>
+                    <p class="p-indentation ">
+                        Je suis très sérieux dans mon travail et en cas d'un projet de groupe je m'assure que le projet
+                        soit bon dans tous les critère et que le travil soit fait avec beaucoup d'attention pour qu'il
+                        soit propre et contient le moins d'erreur possible.
+                    </p>
+                </aside>
+
+                <aside>
+                    <h2>Formation</h2>
+                    <!-- Liste de(s) formation(s) que j'ai faîte(s) actuellement -->
+                    <hr>
+                    <div id="div-flex-aside">
+                        <p><b>Développeur Web et Web mobile</b> <br />
+                            <small><em>Centre européen de formation</em></small>
+                        </p>
+                        <!-- utilisation de Flexbox pour positioner la période 2025/2027 toute a droite de la page  -->
+                        <p id="strong-flex-2025-2027" dir="rtl"><strong>2025/2027</strong></p>
+                    </div>
+                    <div id="div-flex-aside">
+                        <p><b>Baccalauréat</b> <br />
+                            <small><em>Lycée Yves Leborgne</em></small>
+                        </p>
+                        <p id="strong-flex-2024" dir="rtl"><strong>2024</strong></p>
+                    </div>
+                </aside>
+
+                <aside>
+                    <h2>Stages</h2>
+                    <!-- Liste de(s) stage(s) que j'ai effectué actuellement -->
+                    <hr>
+                    <p>Aucun stage effectuer <strong></strong> </p>
+                </aside>
+
+                <aside>
+                    <!-- Liste de(s) Expérience(s) Professionnelle(s) que j'ai eu actuellement -->
+                    <h2>Expérience Professionelle</h2>
+                    <hr>
+                    <p>Aucune expérience professionelle</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <!-- Mise en page du pied de page du CV -->
+    <footer class="content-footer">
+        <div>
+            <img class="Icone-footer-position"
+                srcset="./telecharger/icone-PNG/logo-linkedin.png 480w, ./telecharger/icone-PNG/logo-linkedin.png 800w"
+                sizes=" 20px,
+            30px" src="./telecharger/icone-PNG/logo-linkedin.png" alt="icone email" />
+
+            <img class="Icone-footer-position"
+                srcset="./telecharger/icone-PNG/github.png 480w, ./telecharger/icone-PNG/github.png 800w" sizes=" 20px,
+            30px" src="./telecharger/icone-PNG/github.png" alt="icone email" />
+
+            <img class="Icone-footer-position"
+                srcset="./telecharger/icone-PNG/instagram.png 480w, ./telecharger/icone-PNG/instagram.png 800w" sizes=" 20px,
+            30px" src="./telecharger/icone-PNG/instagram.png" alt="icone email" />
+        </div>
+        <!-- Utilisation de la balise time pour indiquer la dernière mise à jour du CV -->
+        <time datetime="2025-04-14"><small>Mis à jour le 20/04/2025</small></time>
+    </footer>
+</body>
+
+</html>
