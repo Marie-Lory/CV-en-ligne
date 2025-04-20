@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Raleway";
+  src: url('../Fonts/Lato-Raleway/Raleway/static/Raleway-Regular.woff');
+  src: url('../Fonts/Lato-Raleway/Lato/Raleway-Regular.ttf') format('truetype')
+}
+
+body {
+  /* Gestion de la taille en longueur du CV pour qu'il soit dans la limite de 1160px */
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #f3f3f3;
+  /* Couleur des espaces vides */
+}
+
+header {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #17abb3;
+  padding: 1%;
+  text-align: center;
+}
+
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.p-espacement-verticale {
+  margin-top: -5%;
+}
+
+.p-espacement-verticale-Langue {
+  margin-top: -0.5%;
+}
+
+
+#p-Langue-Français {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-left: 34%;
+}
+
+#p-Langue-Anglais {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-left: 62%;
+}
+
+#p-Langue-Espagnol {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-left: 52%;
+}
+
+.p-indentation {
+  text-indent: 20px;
+}
+
+aside {
+  padding: 0px 1%;
+  margin-bottom: 2%;
+}
+
+section {
+  margin: 0 auto;
+}
+
+article {
+  margin-left: 5%;
+  width: 66%;
+}
+
+footer {
+  text-align: center;
+  /* Centre le contenu horizontalement */
+  padding: 2%;
+  /* Ajoute un peu d'espace autour du contenu */
+}
+
+footer small {
+  display: inline-block;
+  color: #ffffff;
+  /* Permet de centrer le texte */
+}
