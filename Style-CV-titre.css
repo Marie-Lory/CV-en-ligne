@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Lato";
+  src: url('../Fonts/Lato-Raleway/Lato/Lato-Regular.woff');
+  src: url('../Fonts/Lato-Raleway/Lato/Lato-Regular.ttf') format('truetype')
+}
+
+h1 {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 64px;
+  /* Par défaut, ajustez cette valeur selon votre besoin */
+  line-height: 0;
+  left: 20%;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  color: #17abb3;
+}
+
+.h2-header {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  left: 20%;
+  margin-bottom: 2%;
+}
+
+.h2-Profil {
+  font-family: "Lato", sans-serif;
+  color: #17abb3;
+  text-align: justify;
+}
