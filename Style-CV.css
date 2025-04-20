@@ -1,0 +1,196 @@
+@import url('Style-CV-titre.css');
+@import url('Style-CV-contenu.css');
+
+#flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hr-nav-taille {
+  margin-right: 6%;
+}
+
+.content-nav {
+  border-left: 50px solid #e3e3e3;
+  margin: -1.1%;
+  width: 33%;
+  /* Ajustez la largeur selon vos besoins */
+  background-color: #e3e3e3;
+  /* Couleur du contenu principal */
+  padding: 1%;
+}
+
+.image-position {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* pour que l'image reste ronde et bien cadrée */
+  z-index: 1;
+  /* assurer que l'image est au-dessus des autres si nécessaire */
+}
+
+.photo-profil {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 1;
+  border: 5px solid white;
+  /* Bordure blanche d'épaisseur 5px */
+}
+
+
+.mail-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  left: 16%;
+}
+
+.Domicile-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  left: 23%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.Téléphone-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  left: 10.5%;
+  margin-top: 1%;
+}
+
+.Permis-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  left: 23.2%;
+}
+
+.Icone-footer-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+.div-espacement-bas {
+  margin-bottom: 2%;
+}
+
+.content-main {
+  margin: 0 auto;
+  width: 90%;
+  /* Ajustez la largeur selon vos besoins */
+  background-color: #ffffff;
+  /* Couleur du contenu principal */
+  padding: 1%;
+}
+
+.content-footer {
+  margin: 0 auto;
+  width: 89.30%;
+  /* Ajustez la largeur selon vos besoins */
+  background-color: #17abb3;
+  /* Couleur du contenu principal */
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#div-flex-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+#div-flex-aside {
+  display: flex;
+  flex-direction: row;
+}
+
+#strong-flex-2025-2027 {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  color: #17abb3;
+  padding-left: 67%;
+  direction: rtl;
+  text-align: right;
+  /* Placement de l'élément strong tout a droite de la page */
+}
+
+#strong-flex-2024 {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  color: #17abb3;
+  padding-left: 74.5%;
+  direction: rtl;
+  text-align: right;
+  /* Placement de l'élément strong tout a droite de la page */
+}
+
+.star-rating-HTML {
+  line-height: 0.1;
+  direction: rtl;
+  /* Pour que les étoiles soient sélectionnées de gauche à droite */
+  display: flex;
+  pointer-events: none;
+  /* Désactive l'interaction de l'utilisateur */
+  font-size: 2em;
+  /* Taille des étoiles */
+  margin-left: 33%;
+  /* J'ai pas trouvé une autre façon de placer la notation en étoile tout à droite de l'élément nav sans utiliser margin-left */
+}
+
+.star-rating-HTML input {
+  display: none;
+  /* Cacher les cases à cocher */
+}
+
+
+.star-rating-CSS {
+  direction: rtl;
+  /* Pour que les étoiles soient sélectionnées de gauche à droite */
+  display: flex;
+  pointer-events: none;
+  /* Désactive l'interaction de l'utilisateur */
+  font-size: 2em;
+  /* Taille des étoiles */
+  margin-left: 36.5%;
+  /* J'ai pas trouvé une autre façon de placer la notation en étoile tout à droite de l'élément nav sans utiliser margin-left */
+  margin-top: -5%;
+}
+
+.star-rating-CSS input {
+  display: none;
+  /* Cacher les cases à cocher */
+}
+
+.star-espacement {
+  margin-left: 10px;
+}
+
+.symbole {
+  color: #17abb3;
+  /* Changez cette couleur selon vos besoins */
+  font-size: 24px;
+  /* Taille du symbole */
+  margin-right: 10px;
+}
