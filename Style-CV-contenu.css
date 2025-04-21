@@ -1,90 +1,200 @@
-@font-face {
-  font-family: "Raleway";
-  src: url('../Fonts/Lato-Raleway/Raleway/static/Raleway-Regular.woff');
-  src: url('../Fonts/Lato-Raleway/Lato/Raleway-Regular.ttf') format('truetype')
+@import url('Style-CV-titre.css');
+@import url('Style-CV-contenu.css');
+
+#flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
-body {
-  /* Gestion de la taille en longueur du CV pour qu'il soit dans la limite de 1160 pixels */
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: #f3f3f3;
-  /* Couleur des espaces vides */
+#flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
-header {
-  margin: 0 auto;
-  width: 90%;
-  background-color: #17abb3;
+.hr-nav-taille {
+  margin-right: 6%;
+}
+
+.content-nav {
+  border-left: 50px solid #e3e3e3;
+  margin: -1.1%;
+  width: 33%;
+  /* Ajustez la largeur selon vos besoins */
+  background-color: #e3e3e3;
+  /* Couleur du contenu principal */
   padding: 1%;
-  text-align: center;
 }
 
-
-p {
-  font-family: "Raleway", sans-serif;
+.image-position {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* pour que l'image reste ronde et bien cadrée */
+  z-index: 1;
+  /* assurer que l'image est au-dessus des autres si nécessaire */
 }
 
-.p-espacement-verticale {
-  margin-top: -5%;
+.photo-profil {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 1;
+  border: 5px solid white;
+  /* Bordure blanche d'épaisseur 5px */
 }
 
-.p-espacement-verticale-Langue {
-  margin-top: -0.5%;
+/* Survol de l’image pour indiquer qu’on peut zoomer */
+.photo-profil:hover {
+  cursor: zoom-in;
 }
 
-
-#p-Langue-Français {
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  padding-left: 34%;
+.mail-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  left: 16%;
 }
 
-#p-Langue-Anglais {
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  padding-left: 62%;
+.Domicile-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  left: 23%;
 }
 
-#p-Langue-Espagnol {
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  padding-left: 52%;
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.p-indentation {
-  text-indent: 20px;
+.Téléphone-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  left: 12.5%;
+  margin-top: 1%;
 }
 
-aside {
-  padding: 0px 1%;
+.Permis-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  left: 21.2%;
+}
+
+.Icone-footer-position {
+  position: relative;
+  display: inline;
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+.div-espacement-bas {
   margin-bottom: 2%;
 }
 
-section {
+.content-main {
   margin: 0 auto;
+  width: 90%;
+  /* Ajustez la largeur selon vos besoins */
+  background-color: #ffffff;
+  /* Couleur du contenu principal */
+  padding: 1%;
 }
 
-article {
-  margin-left: 5%;
-  width: 66%;
-}
-
-footer {
+.content-footer {
+  margin: 0 auto;
+  width: 89.30%;
+  /* Ajustez la largeur selon vos besoins */
+  background-color: #17abb3;
+  /* Couleur du contenu principal */
+  padding: 10px 20px;
   text-align: center;
-  /* Centre le contenu horizontalement */
-  padding: 2%;
-  /* Ajoute un peu d'espace autour du contenu */
 }
 
-footer small {
-  display: inline-block;
-  color: #ffffff;
-  /* Permet de centrer le texte */
+.div-flex-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.div-flex-aside {
+  display: flex;
+  flex-direction: row;
+}
+
+#strong-flex-2025-2027 {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  color: #17abb3;
+  padding-left: 67%;
+  direction: rtl;
+  text-align: right;
+  /* Placement de l'élément strong tout a droite de la page */
+}
+
+#strong-flex-2024 {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  color: #17abb3;
+  padding-left: 74.5%;
+  direction: rtl;
+  text-align: right;
+  /* Placement de l'élément strong tout a droite de la page */
+}
+
+.star-rating-HTML {
+  line-height: 0.1;
+  direction: rtl;
+  /* Pour que les étoiles soient sélectionnées de gauche à droite */
+  display: flex;
+  pointer-events: none;
+  /* Désactive l'interaction de l'utilisateur */
+  font-size: 2em;
+  /* Taille des étoiles */
+  margin-left: 33%;
+  /* J'ai pas trouvé une autre façon de placer la notation en étoile tout à droite de l'élément nav sans utiliser margin-left */
+}
+
+.star-rating-HTML input {
+  display: none;
+  /* Cacher les cases à cocher */
+}
+
+
+.star-rating-CSS {
+  direction: rtl;
+  /* Pour que les étoiles soient sélectionnées de gauche à droite */
+  display: flex;
+  pointer-events: none;
+  /* Désactive l'interaction de l'utilisateur */
+  font-size: 2em;
+  /* Taille des étoiles */
+  margin-left: 36.5%;
+  /* J'ai pas trouvé une autre façon de placer la notation en étoile tout à droite de l'élément nav sans utiliser margin-left */
+  margin-top: -5%;
+}
+
+.star-rating-CSS input {
+  display: none;
+  /* Cacher les cases à cocher */
+}
+
+.star-espacement {
+  margin-left: 10px;
+}
+
+.symbole {
+  color: #17abb3;
+  /* Changez cette couleur selon vos besoins */
+  font-size: 24px;
+  /* Taille du symbole */
+  margin-right: 10px;
 }
