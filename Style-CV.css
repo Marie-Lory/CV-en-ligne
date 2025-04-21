@@ -19,6 +19,7 @@
   border-left: 50px solid #e3e3e3;
   margin: -1.1%;
   width: 33%;
+  /* Ajustez la largeur selon vos besoins */
   background-color: #e3e3e3;
   /* Couleur du contenu principal */
   padding: 1%;
@@ -37,8 +38,8 @@
 
 .photo-profil {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   z-index: 1;
@@ -46,6 +47,10 @@
   /* Bordure blanche d'épaisseur 5px */
 }
 
+/* Survol de l’image pour indiquer qu’on peut zoomer */
+.photo-profil:hover {
+  cursor: zoom-in;
+}
 
 .mail-position {
   position: relative;
@@ -70,7 +75,7 @@ a {
   position: relative;
   display: inline;
   color: #ffffff;
-  left: 10.5%;
+  left: 12.5%;
   margin-top: 1%;
 }
 
@@ -78,7 +83,7 @@ a {
   position: relative;
   display: inline;
   color: #ffffff;
-  left: 23.2%;
+  left: 21.2%;
 }
 
 .Icone-footer-position {
@@ -111,14 +116,14 @@ a {
   text-align: center;
 }
 
-#div-flex-nav {
+.div-flex-nav {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
 }
 
-#div-flex-aside {
+.div-flex-aside {
   display: flex;
   flex-direction: row;
 }
