@@ -1,200 +1,134 @@
-@import url('Style-CV-titre.css');
-@import url('Style-CV-contenu.css');
-
-#flex-row {
-  display: flex;
-  flex-direction: row;
+@font-face {
+  font-family: "Raleway";
+  src: url('../Fonts/Lato-Raleway/Raleway/static/Raleway-Regular.woff');
+  src: url('../Fonts/Lato-Raleway/Lato/Raleway-Regular.ttf') format('truetype')
 }
 
-#flex-column {
-  display: flex;
-  flex-direction: column;
+body {
+  /* Gestion de la taille en longueur du CV pour qu'il soit dans la limite de 1160px */
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #f3f3f3;
+  /* Couleur des espaces vides */
 }
 
-.hr-nav-taille {
-  margin-right: 6%;
-}
-
-.content-nav {
-  border-left: 50px solid #e3e3e3;
-  margin: -1.1%;
-  width: 33%;
-  /* Ajustez la largeur selon vos besoins */
-  background-color: #e3e3e3;
-  /* Couleur du contenu principal */
-  padding: 1%;
-}
-
-.image-position {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  /* pour que l'image reste ronde et bien cadrée */
-  z-index: 1;
-  /* assurer que l'image est au-dessus des autres si nécessaire */
-}
-
-.photo-profil {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  z-index: 1;
-  border: 5px solid white;
-  /* Bordure blanche d'épaisseur 5px */
-}
-
-/* Survol de l’image pour indiquer qu’on peut zoomer */
-.photo-profil:hover {
-  cursor: zoom-in;
-}
-
-.mail-position {
-  position: relative;
-  display: inline;
-  color: #ffffff;
-  left: 16%;
-}
-
-.Domicile-position {
-  position: relative;
-  display: inline;
-  color: #ffffff;
-  left: 23%;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.Téléphone-position {
-  position: relative;
-  display: inline;
-  color: #ffffff;
-  left: 12.5%;
-  margin-top: 1%;
-}
-
-.Permis-position {
-  position: relative;
-  display: inline;
-  color: #ffffff;
-  left: 21.2%;
-}
-
-.Icone-footer-position {
-  position: relative;
-  display: inline;
-  color: #ffffff;
-  padding-right: 20px;
-}
-
-.div-espacement-bas {
-  margin-bottom: 2%;
-}
-
-.content-main {
+header {
   margin: 0 auto;
   width: 90%;
-  /* Ajustez la largeur selon vos besoins */
-  background-color: #ffffff;
-  /* Couleur du contenu principal */
-  padding: 1%;
-}
-
-.content-footer {
-  margin: 0 auto;
-  width: 89.30%;
-  /* Ajustez la largeur selon vos besoins */
   background-color: #17abb3;
-  /* Couleur du contenu principal */
-  padding: 10px 20px;
+  padding: 1%;
   text-align: center;
 }
 
-.div-flex-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
+
+p {
+  font-family: "Raleway", sans-serif;
 }
 
-.div-flex-aside {
-  display: flex;
-  flex-direction: row;
-}
-
-#strong-flex-2025-2027 {
-  display: flex;
-  align-items: start;
-  justify-content: end;
-  color: #17abb3;
-  padding-left: 67%;
-  direction: rtl;
-  text-align: right;
-  /* Placement de l'élément strong tout a droite de la page */
-}
-
-#strong-flex-2024 {
-  display: flex;
-  align-items: start;
-  justify-content: end;
-  color: #17abb3;
-  padding-left: 74.5%;
-  direction: rtl;
-  text-align: right;
-  /* Placement de l'élément strong tout a droite de la page */
-}
-
-.star-rating-HTML {
-  line-height: 0.1;
-  direction: rtl;
-  /* Pour que les étoiles soient sélectionnées de gauche à droite */
-  display: flex;
-  pointer-events: none;
-  /* Désactive l'interaction de l'utilisateur */
-  font-size: 2em;
-  /* Taille des étoiles */
-  margin-left: 33%;
-  /* J'ai pas trouvé une autre façon de placer la notation en étoile tout à droite de l'élément nav sans utiliser margin-left */
-}
-
-.star-rating-HTML input {
-  display: none;
-  /* Cacher les cases à cocher */
-}
-
-
-.star-rating-CSS {
-  direction: rtl;
-  /* Pour que les étoiles soient sélectionnées de gauche à droite */
-  display: flex;
-  pointer-events: none;
-  /* Désactive l'interaction de l'utilisateur */
-  font-size: 2em;
-  /* Taille des étoiles */
-  margin-left: 36.5%;
-  /* J'ai pas trouvé une autre façon de placer la notation en étoile tout à droite de l'élément nav sans utiliser margin-left */
+.p-espacement-verticale {
   margin-top: -5%;
 }
 
-.star-rating-CSS input {
-  display: none;
-  /* Cacher les cases à cocher */
+.p-espacement-verticale-Langue {
+  margin-top: -0.5%;
 }
 
-.star-espacement {
-  margin-left: 10px;
+
+#p-Langue-Français {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-left: 34%;
 }
 
-.symbole {
-  color: #17abb3;
-  /* Changez cette couleur selon vos besoins */
-  font-size: 24px;
-  /* Taille du symbole */
-  margin-right: 10px;
+#p-Langue-Anglais {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-left: 62%;
+}
+
+#p-Langue-Espagnol {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-left: 52%;
+}
+
+.p-indentation {
+  text-indent: 20px;
+}
+
+/* Style par défaut pour aside */
+aside {
+  position: relative;
+  transition: background-color 0.3s, border-left 0.3s;
+}
+
+aside div,
+.content-main>p,
+.content-main>div {
+  transition: background-color 0.3s ease;
+}
+
+aside div:hover,
+.content-main>p:hover,
+.content-main>div:hover {
+  background-color: #f3f3f3;
+  /* couleur de survol, à adapter */
+}
+
+.div-survol {
+  position: relative;
+  padding-left: 10px;
+  /* espace entre le trait et le texte */
+}
+
+.div-survol:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #17abb3;
+  border-radius: 2px;
+  /* Ajoutez éventuellement transition pour un effet fluide */
+  transition: background-color 0.3s, width 0.3s, opacity 0.3s;
+  /* Si vous souhaitez ajouter une transition pour un effet fluide */
+}
+
+
+section {
+  margin: 0 auto;
+}
+
+article {
+  margin-left: 5%;
+  width: 66%;
+}
+
+footer {
+  text-align: center;
+  /* Centre le contenu horizontalement */
+  padding: 2%;
+  /* Ajoute un peu d'espace autour du contenu */
+}
+
+footer small {
+  display: inline-block;
+  color: #ffffff;
+  /* Permet de centrer le texte */
+}
+
+.content-footer img {
+  transition: opacity 0.3s;
+}
+
+.content-footer img:hover {
+  opacity: 0.7;
+  /* ou une autre valeur pour l’effet souhaité */
 }
