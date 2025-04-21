@@ -9,6 +9,7 @@ h1 {
   font-family: "Lato", sans-serif;
   color: #ffffff;
   font-size: 64px;
+  /* Par défaut, ajustez cette valeur selon votre besoin */
   line-height: 0;
   left: 20%;
 }
@@ -30,4 +31,6 @@ h2 {
   font-family: "Lato", sans-serif;
   color: #17abb3;
   text-align: justify;
+  --title-color: #17abb3;
+  /* ou la couleur que vous utilisez pour les titres */
 }
