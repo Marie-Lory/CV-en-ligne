@@ -5,7 +5,7 @@
 }
 
 body {
-  /* Gestion de la taille en longueur du CV pour qu'il soit dans la limite de 1160 pixels */
+  /* Gestion de la taille en longueur du CV pour qu'il soit dans la limite de 1160px */
   margin-left: 10%;
   margin-right: 10%;
   padding: 0;
@@ -62,10 +62,45 @@ p {
   text-indent: 20px;
 }
 
+/* Style par défaut pour aside */
 aside {
-  padding: 0px 1%;
-  margin-bottom: 2%;
+  position: relative;
+  transition: background-color 0.3s, border-left 0.3s;
 }
+
+aside div,
+.content-main>p,
+.content-main>div {
+  transition: background-color 0.3s ease;
+}
+
+aside div:hover,
+.content-main>p:hover,
+.content-main>div:hover {
+  background-color: #f3f3f3;
+  /* couleur de survol, à adapter */
+}
+
+.div-survol {
+  position: relative;
+  padding-left: 10px;
+  /* espace entre le trait et le texte */
+}
+
+.div-survol:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #17abb3;
+  border-radius: 2px;
+  /* Ajoutez éventuellement transition pour un effet fluide */
+  transition: background-color 0.3s, width 0.3s, opacity 0.3s;
+  /* Si vous souhaitez ajouter une transition pour un effet fluide */
+}
+
 
 section {
   margin: 0 auto;
@@ -87,4 +122,13 @@ footer small {
   display: inline-block;
   color: #ffffff;
   /* Permet de centrer le texte */
+}
+
+.content-footer img {
+  transition: opacity 0.3s;
+}
+
+.content-footer img:hover {
+  opacity: 0.7;
+  /* ou une autre valeur pour l’effet souhaité */
 }
